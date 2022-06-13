@@ -1,0 +1,256 @@
+:root{
+    --text-color: white;
+    --default-opacity: 0.7;
+    --text-align: center;
+    --background-color: purple;
+}
+body{
+    background-color: hsl(233, 47%, 7%);
+    color: var(--text-color);
+    text-align: center;
+}
+/* styling the main container  */
+main{
+    width:80%;
+    min-height: 550px;
+    background-color:  hsl(244, 38%, 16%);
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+}
+
+
+
+/* styling the image container  */
+div:first-of-type{
+    border: transparent 2px red;
+    width: 100%;
+    height: 15em;
+    background-color:hsl(277, 93%, 59%);
+    display: flex;
+    border-radius: 14px 14px 0px 0px ;
+}
+/* styling the image  */
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    opacity: 0.6;
+}
+
+
+
+
+/* styling the first approach   */
+h1 span{
+    color: hsl(277, 93%, 59%);
+}
+h1{
+    margin: 20px;
+}
+
+
+
+/* styling the paragraph  */
+p{
+    margin: 10px;
+    opacity: var(--default-opacity);
+}
+
+
+
+/* styling the stats  */
+p:nth-child(2){
+    font-size: 0.8rem;
+    line-height: 0.5;
+    margin-bottom: 10px;
+    opacity: var(--default-opacity);
+}
+#last_stat{
+    margin-bottom: 20px;
+}
+
+/* the flex items under the main container */
+div:first-of-type{
+    flex-grow: 30 ;
+
+}
+div:first-of-type + h1{
+    flex-shrink: 2 ;
+     
+}
+p{
+    flex-shrink: 1 ;
+}
+div:nth-of-type(2){
+    flex-shrink: 3 ;
+
+}
+div:nth-of-type(3){
+    flex-shrink: 3;
+    
+}
+div:last-of-type{
+    flex-shrink:3 ;
+    
+}
+ 
+
+
+
+@media screen and (min-width:800px) {
+    main{
+       
+        position: relative;
+        right: 10%;
+        width: 60%;
+        min-height: 200px;
+        display: grid;
+        background-color:  hsl(244, 38%, 16%);
+        grid-template-areas: 
+        'firsth1 firsth1 firsth1 image image image'
+        'firstP firstP firstP image image image'
+        'firstStat secondStat thirdStat image image image';
+    }
+
+
+
+    /* the grid items under the main container */
+div:first-of-type{
+    grid-area: image;
+    height: 100%;
+    width: 20rem;
+    border-radius: 0px 14px 14px 0px ;
+
+}
+
+div:first-of-type + h1{
+    grid-area: firsth1;
+}
+
+p{
+    grid-area: firstP ;
+}
+div:nth-of-type(2){
+    grid-area: firstStat ;
+}
+div:nth-of-type(3){
+    grid-area: secondStat ; 
+}
+div:last-of-type{
+    grid-area: thirdStat ;
+}
+
+    
+    
+}
+
+
+/* for laptops */
+
+@media screen and (min-width:1000px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    main{
+
+        width: 40%;
+        min-height: 200px;
+        display: grid;
+        background-color:  hsl(244, 38%, 16%);
+        grid-template-areas: 
+        'firsth1 firsth1 firsth1 image image image'
+        'firstP firstP firstP image image image'
+        'firstStat secondStat thirdStat image image image';
+    }
+
+
+
+    /* the grid items under the main container */
+div:first-of-type{
+    grid-area: image;
+    height: 100%;
+    width: 20rem;
+    border-radius: 0px 14px 14px 0px ;
+
+}
+
+div:first-of-type + h1{
+    grid-area: firsth1;
+}
+
+p{
+    grid-area: firstP ;
+}
+div:nth-of-type(2){
+    grid-area: firstStat ;
+}
+div:nth-of-type(3){
+    grid-area: secondStat ; 
+}
+div:last-of-type{
+    grid-area: thirdStat ;
+}
+
+}
+
+
+
+
+@media screen and (min-width: 1300px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    main{
+
+        width: 40%;
+        min-height: 200px;
+        display: grid;
+        background-color:  hsl(244, 38%, 16%);
+        grid-template-areas: 
+        'firsth1 firsth1 firsth1 image image image'
+        'firstP firstP firstP image image image'
+        'firstStat secondStat thirdStat image image image';
+    }
+
+
+
+    /* the grid items under the main container */
+div:first-of-type{
+    grid-area: image;
+    height: 100%;
+    width: 20rem;
+    border-radius: 0px 14px 14px 0px ;
+
+}
+
+div:first-of-type + h1{
+    grid-area: firsth1;
+}
+
+p{
+    grid-area: firstP ;
+}
+div:nth-of-type(2){
+    grid-area: firstStat ;
+}
+div:nth-of-type(3){
+    grid-area: secondStat ; 
+}
+div:last-of-type{
+    grid-area: thirdStat ;
+}
+
+}
+
+
+
+
+
