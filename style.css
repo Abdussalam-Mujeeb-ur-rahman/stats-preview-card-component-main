@@ -1,13 +1,16 @@
+
 :root{
     --text-color: white;
     --default-opacity: 0.7;
     --text-align: center;
     --background-color: purple;
 }
+
 body{
     background-color: hsl(233, 47%, 7%);
     color: var(--text-color);
     text-align: center;
+    font-family: 'Inter';
 }
 /* styling the main container  */
 main{
@@ -48,6 +51,8 @@ h1 span{
 }
 h1{
     margin: 20px;
+    font-family: 'Inter';
+    font-weight: 600;
 }
 
 
@@ -61,6 +66,7 @@ p{
 
 
 /* styling the stats  */
+
 p:nth-child(2){
     font-size: 0.8rem;
     line-height: 0.5;
@@ -70,6 +76,8 @@ p:nth-child(2){
 #last_stat{
     margin-bottom: 20px;
 }
+
+
 
 /* the flex items under the main container */
 div:first-of-type{
